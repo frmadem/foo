@@ -1,7 +1,7 @@
 name: 'Merge command'
 
 on:
-  push:
+  synchronize:
     branches:
     - master
 
