@@ -1,19 +1,14 @@
 name: 'Merge command'
 
-on: issue_comment
+on:
+  push:
+    branches:
+    - master
 
 jobs:
-  merge-command:
-
+  pipeline:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
+      - name: saludo
+        run: echo "saludo"
 
-    - name: Merge command
-      uses: Goobles/gh-actions-merge-command@v1
-      with:
-        allow_ff: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
