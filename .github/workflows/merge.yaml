@@ -1,9 +1,9 @@
-name: 'Merge command'
+name: 'Prueba'
 
 on:
   push:
     branches:
-    - master
+      - master
 
 jobs:
   pipeline:
